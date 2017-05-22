@@ -103,6 +103,11 @@ header, .promo {
   background-color: #141a25;
 }
 
+.advantage-item {
+    display: inline-block;
+  width: 30%;
+}
+
 .advantage-item-txt {
   font-family: ProximaNovaSemibold, sans-serif;
   color: #fff;
@@ -111,6 +116,18 @@ header, .promo {
   text-transform: uppercase;
 }
 
+.buy {
+  background-color: #fe333c;
+}
 
+.buy-item {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.product-card-list {
+  list-style: none;
+  padding-left: 0;
+}
 
 
