@@ -59,15 +59,27 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fe333c;
 }
 
-header, .promo {
-	background-color: #141a25;
+header {
+	position: absolute; 
+}
+
+.promo {
+  position: relative;
+  background-image: url(../img/top-bg.jpg);
+  background-size: 105%;
+  background-repeat: no-repeat;
+  color: #fff;
+  
+
+  padding-bottom: 155px;
+  // border: 3px solid green;
 }
 
 .header-tel {
 	color: #fff;
   font-family: ProximaNovaLight, sans-serif;
   font-size: 20px;
-  margin-top: 56px;
+  // margin-top: 56px;
 }
 
 .promo-title {
@@ -76,7 +88,7 @@ header, .promo {
 	font-size: 70px;
   line-height: 72px;
 
-  margin-top: 95px;
+  margin-top: 100px;
   margin-bottom: 20px;
 }
 
@@ -87,42 +99,149 @@ header, .promo {
   margin-bottom: 65px;
 }
 
-.specific-main-txt {
+.sale-label {
+  padding: 6px;
+  background-color: #141a25;
+  position: absolute;
+  text-transform: uppercase;
+  
+}
+
+.promo-sale-title {
+  position: relative;
+  
+  font-family: ProximaNovaLight, sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top: 170px;
+}
+
+.promo-sale-txt {
+  font-family: ProximaNovaLight, sans-serif;
+  font-size: 18px;
+  line-height: 30px; 
+}
+
+.promo-sale-left {
+  display: inline-block;
+  vertical-align: baseline; 
+}
+
+.promo-sale-right {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 400px;
+
+  border: 1px solid yellow; 
+}
+
+.old-price {
+  position: absolute;
+  font-size: 20px;
+  text-decoration: line-through;  
+}
+
+.new-price {
+  position: relative;
+  font-family: ProximaNovaSemibold, sans-serif;
+  font-size: 80px;
+}
+
+.specific-item {
+  margin-bottom: 100px;
+}
+
+.specific-item-img-box {
+  display: inline-block;
+  vertical-align: middle;
   width: 50%;
+}
+
+.specific-item-img-box:last-child {
+  text-align: right;
+}
+
+.specific-main-txt {
+  // font-family: ProximaNovaRegular, sans-serif;
   font-size: 20px;
   line-height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 48%;
 }
 
 .specific-small-txt {
+  display: block;
   color: #a6a7a9;
   font-size: 15px;
   line-height: 25px;
+  margin-top: 20px;
 }
 
 .advantage {
-  background-color: #141a25;
+  background-image: url(../img/adv-bg-cropped.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  padding-top: 45px;
+  padding-bottom: 370px;
 }
 
 .advantage-item {
     display: inline-block;
-  width: 30%;
+    vertical-align: top;
+    text-align: center;
+    
+    width: 33%;
+    margin-bottom: 115px;
+}
+
+.advantage-item-img-box img{
+  width: 80px;
+  height: 80px;
 }
 
 .advantage-item-txt {
-  font-family: ProximaNovaSemibold, sans-serif;
+  font-family: ProximaNovaLight, sans-serif;
   color: #fff;
   font-size: 15px;
   line-height: 25px;
   text-transform: uppercase;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .buy {
-  background-color: #fe333c;
+  background-image: url(../img/buy-bg-full.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  padding-top: 400px;
+  padding-bottom: 1400px;
+}
+
+.buy-items-inner {
+  
 }
 
 .buy-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 14%;
+  margin: 0 1%;
+
+}
+
+.buy-item-txt {
+  font-family: ProximaNovaLight, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
   color: #fff;
   text-transform: uppercase;
+  margin-top: 35px;
 }
 
 .product-card-list {
