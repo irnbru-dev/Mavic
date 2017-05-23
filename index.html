@@ -3,21 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<title>Mavic-PRO</title>
+	<!-- <script src="https://vk.com/js/api/openapi.js?146" type="text/javascript"></script> -->
 </head>
 <body>
 
 <main>
 
-<header>
+<!-- <header>
 	<div class="container">
 		<div class="logo"></div>
 		<div class="header-tel">+7 965 206 84 45</div>
 	</div>
-</header>
+</header> -->
 
 <div class="promo">
 	<div class="container">
+	<header>
+		<div class="logo-hdr">
+			<a href="index.html">
+				<img src="img/logo-hdr.png" alt="LOGO">
+			</a>
+		</div>
+		<div class="header-tel"><a href="#">+7 965 206 84 45</a></div>
+	</header>
+
 		<h1 class="promo-title">Самый<br> продвинутый<br> квадрокоптер!</h1>
 		<p class="promo-txt">DJI MAVIC PRO</p>
 		<div class="btn btn-red-bg"><a href="#">Узнать больше</a></div>
@@ -28,9 +40,11 @@
 				<p class="promo-sale-txt">и получи 30 минут обучения полету<br> на дроне бесплатно!</p>
 			</div>
 			<div class="promo-sale-right">
-				<span class="old-price">76 000</span>
-				<p class="new-price"><span>73 000</span></p>
-				<div class="btn"><a href="#">Купить</a></div>
+				<p class="price">
+					<span class="old-price">76 000</span>
+					<span class="new-price">73 000</span>
+				</p>
+				<div class="btn btn-round-white"><a href="#">Купить</a></div>
 			</div>
 		</div>
 	</div>
@@ -56,7 +70,15 @@
 			</div>
 		</div>
 
-		<div class="SLIDER"></div>
+		<div class="owl-carousel">
+  			<div><img src="img/slider.jpg" alt=""></div>
+  			<div><img src="img/slider.jpg" alt=""></div>
+  			<div><img src="img/slider.jpg" alt=""></div>
+  			<div><img src="img/slider.jpg" alt=""></div>
+  			<div><img src="img/slider.jpg" alt=""></div>
+  			<div><img src="img/slider.jpg" alt=""></div>
+  			<div><img src="img/slider.jpg" alt=""></div>
+		</div>
 
 
 	</div>
@@ -191,45 +213,59 @@
 					<li class="product-card-item">Аппаратура управления</li>
 					<li class="product-card-item">Зарядное устройство</li>
 					<li class="product-card-item">Карта памяти на 16 ГБ</li>
-					<li class="product-card-item">5 комплектов лопастей</li>
-					<li class="product-card-item">3 аккумулятора</li>
-					<li class="product-card-item">Зарядное устройство для машины</li>
-					<li class="product-card-item">ХАб для подзарядки до четырех аккумуляторов одновременно</li>
-					<li class="product-card-item">Оригинальная сумка для переноски DJI Mavic Pro и всех комплектующих</li>
+					<li class="product-card-item product-card-item-extra">5 комплектов лопастей</li>
+					<li class="product-card-item product-card-item-extra">3 аккумулятора</li>
+					<li class="product-card-item product-card-item-extra">Зарядное устройство для машины</li>
+					<li class="product-card-item product-card-item-extra">ХАб для подзарядки до четырех аккумуляторов одновременно</li>
+					<li class="product-card-item product-card-item-extra">Оригинальная сумка для переноски DJI Mavic Pro и всех комплектующих</li>
 				</ul>
 				<div class="btn btn-red-bg"><a href="#">Купить</a></div>
 			</div>
 		</div>
 
 		<div class="call-form">
-			<p>Остались вопросы?</p>
-			<p>Оставьте свой номер телефона, и наши специалисты свяжутся с вами в течение 10 минут.</p>
-			<input type="text" placeholder="Телефон">
-			<div class="btn"><a href="#">Перезвонить мне</a></div>
+			<div class="call-form-left">
+				<p class="call-form-title">Остались вопросы?</p>
+				<p class="call-form-txt">Оставьте свой номер телефона, и наши специалисты свяжутся с вами в течение 10 минут.</p>
+			</div>
+			<div class="call-form-right">
+				<input type="text" placeholder="Телефон">
+				<div class="btn btn-callback"><a href="#">Перезвонить мне</a></div>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="VK-reviews"></div>
+<div class="vk-review">
+	<div class="container">
+		<h2 class="vk-review-title">Отзывы клиентов</h2>
+		<!-- <div id="vk_comments"></div> 
+			<script type="text/javascript"> 
+ 				VK.Widgets.Comments('vk_comments'); 
+			</script>
+		</div> -->
+	</div>
+</div>
 
-<footer>
+<footer class="footer">
 	<div class="container">
 		<div class="ftr-left">
+			<div class="logo-ftr"><img src="img/logo-ftr.png" alt="LOGO"></div>
 			<div class="tel">+7 965 206 84 45</div>
 			<div class="mail">mavicshop.ru@gmail.com</div>
 			<div class="address">г. Санкт-Петербург, Северный бульвар, дом 2</div>
 		</div>
 		<div class="ftr-right">
-			<p>Подписаться на рассылку</p>
+			<p class="ftr-right-txt">Подписаться на рассылку</p>
 			<input type="text" placeholder="Ваш email">
 			<div class="btn"><a href="#">Отправить</a></div>
 		</div>
-
-
 </footer>
-
-
 </main>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

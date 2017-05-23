@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px 36px;
   border-radius: 27px;
   width: 190px;
+  text-align: center;
 }
 
 .btn a {
@@ -52,11 +53,19 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
   color: #fff;
   white-space: nowrap;
-  text-align: center;
 }
 
 .btn-red-bg {
   background-color: #fe333c;
+}
+
+.btn-callback {
+  border: 2px solid #4f535c;
+  width: 225px;
+}
+
+.btn-round-white {
+  border: 2px solid #fff;
 }
 
 header {
@@ -66,7 +75,8 @@ header {
 .promo {
   position: relative;
   background-image: url(../img/top-bg.jpg);
-  background-size: 105%;
+  background-size: 100% 1000px;
+  // background-position: -100px;
   background-repeat: no-repeat;
   color: #fff;
   
@@ -75,11 +85,31 @@ header {
   // border: 3px solid green;
 }
 
+// .header {
+//   position: absolute;
+//   top: 50px;
+//   z-index: 1;
+// }
+
+.logo-hdr {
+  display: inline-block;
+}
+
 .header-tel {
-	color: #fff;
+  display: inline-block;
+  margin-left: 170px;
+  margin-top: 56px;
+}
+
+.header-tel a {
+  text-decoration: none;
+  color: #fff;
   font-family: ProximaNovaLight, sans-serif;
   font-size: 20px;
-  // margin-top: 56px;
+}
+
+.promo {
+  position: relative;
 }
 
 .promo-title {
@@ -88,7 +118,7 @@ header {
 	font-size: 70px;
   line-height: 72px;
 
-  margin-top: 100px;
+  margin-top: 170px;
   margin-bottom: 20px;
 }
 
@@ -100,6 +130,8 @@ header {
 }
 
 .sale-label {
+  position: absolute;
+  top: -40px;
   padding: 6px;
   background-color: #141a25;
   position: absolute;
@@ -109,11 +141,9 @@ header {
 
 .promo-sale-title {
   position: relative;
-  
   font-family: ProximaNovaLight, sans-serif;
   font-size: 42px;
   text-transform: uppercase;
-  margin-top: 170px;
 }
 
 .promo-sale-txt {
@@ -123,6 +153,8 @@ header {
 }
 
 .promo-sale-left {
+  margin-top: 170px;
+  position: relative;
   display: inline-block;
   vertical-align: baseline; 
 }
@@ -130,19 +162,21 @@ header {
 .promo-sale-right {
   display: inline-block;
   vertical-align: baseline;
-  margin-left: 400px;
+  margin-left: 400px; 
+}
 
-  border: 1px solid yellow; 
+.price {
+  position: relative;
 }
 
 .old-price {
   position: absolute;
   font-size: 20px;
-  text-decoration: line-through;  
+  text-decoration: line-through;
+  top: -20px;
 }
 
 .new-price {
-  position: relative;
   font-family: ProximaNovaSemibold, sans-serif;
   font-size: 80px;
 }
@@ -179,6 +213,8 @@ header {
 }
 
 .advantage {
+  position: relative;
+  
   background-image: url(../img/adv-bg-cropped.jpeg);
   background-size: cover;
   background-position: center center;
@@ -186,6 +222,17 @@ header {
   
   padding-top: 45px;
   padding-bottom: 370px;
+}
+
+.advantage:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  
+  width: 100%;
+  height: 200px;
+
+  // background-color: red;
 }
 
 .advantage-item {
@@ -215,11 +262,13 @@ header {
 
 .buy {
   background-image: url(../img/buy-bg-full.jpg);
-  background-size: 130%;
+  background-size: 150%;
   background-repeat: no-repeat;
 
   padding-top: 400px;
-  padding-bottom: 1400px;
+  padding-bottom: 100px;
+
+  border: 1px solid green;
 }
 
 .buy-items-inner {
@@ -260,6 +309,8 @@ header {
   margin-top: 105px;
   margin-right: 13%;
   padding-bottom: 50px;
+
+  border: 3px solid red;
 }
 
 .product-card:last-child {
@@ -325,18 +376,22 @@ header {
   margin-bottom: 15px;
 }
 
+.product-card-item-extra {
+  position: relative;
+}
+
 .product-card-item-extra:before {
   position: absolute;
   display: inline-block;
   content: '';
 
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
+  
+  top: 27px;
+  left: -20px;
 
-  // left: px;
-  // top: -1px;
-
-  background-image: url(../img/);
+  background-image: url(../img/plus.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -345,8 +400,74 @@ header {
   margin: 0 auto;
 }
 
+.call-form {
+  color: #fff;
+  margin-top: 70px;
+}
 
+.call-form-left {
+  display: inline-block;
+  width: 50%;
+}
 
+.call-form-right {
+  display: inline-block;
+  width: 45%;
+  text-align: left;
+}
+
+.call-form-title {
+  font-family: ProximaNovaLight, sans-serif;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.call-form-txt {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.vk-review {
+  padding-top: 80px;
+}
+
+.vk-review-title {
+  font-family: ProximaNovaLight, sans-serif;
+  font-size: 50px;
+  margin-bottom: 35px;
+}
+
+.footer {
+  border-top: 1px solid #e7e8e9;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.ftr-left {
+  width: 50%;
+  display: inline-block;
+  font-family: ProximaNovaSemibold, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  vertical-align: top;
+}
+
+.logo-ftr {
+  margin-bottom: 30px;
+}
+
+.ftr-right {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ftr-right-txt {
+  font-family: ProximaNovaRegular, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 60px;
+}
 
 
 
