@@ -412,7 +412,7 @@ header {
   width: 8px;
   height: 8px;
   
-  top: 27px;
+  top: 20px;
   left: -20px;
 
   background-image: url(../img/plus.png);
@@ -432,27 +432,61 @@ header {
 .call-form-left {
   display: inline-block;
   width: 50%;
+  margin-right: 5%;
+  vertical-align: top;
 }
 
 .call-form-right {
   display: inline-block;
-  width: 45%;
+  width: 43%;
   text-align: left;
+  vertical-align: top;
 }
 
 .call-form-title {
   font-family: ProximaNovaLight, sans-serif;
   font-size: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .call-form-txt {
+  font-family: ProximaNovaLight, sans-serif;
   font-size: 20px;
   line-height: 30px;
 }
 
 .call-form-tel {
+  position: relative;
+  width: 340px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 25px;
   outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  color: #fff;
+  border-bottom: 2px solid #54585f;
+  background-color: transparent;
+}
+
+.call-form-tel:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+
+  top: 10px;
+  left: -10px;
+  
+  background-image: url(../img/phone.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.call-form-right > .btn-callback {
+  margin-left: 60px;
 }
 
 .vk-review {
@@ -499,13 +533,27 @@ header {
 
 .ftr-mail {
   display: inline-block;
-  width: 35%;
+  vertical-align: top;
+  font-size: 18px;
+  line-height: 25px;
   outline: none;
+
+  width: 360px;
+  margin-bottom: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 15px;
+  color: #000;
+  border-bottom: 2px solid #c0c2c5;
+  background-color: transparent;
 }
 
 .ftr-right> .btn-send {
   width: 30%;
   float: right;
+
+  margin-top: -20px;
 }
 
 .owl-carousel {
