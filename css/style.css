@@ -41,13 +41,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  padding: 15px 36px;
-  border-radius: 27px;
   width: 190px;
   text-align: center;
 }
 
 .btn a {
+  padding: 15px 35px;
+  border-radius: 27px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 15px;
@@ -55,22 +55,17 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.btn-red-bg {
+.btn-red-bg a{
   background-color: #fe333c;
 }
 
-.btn-callback {
+.btn-callback a{
   border: 2px solid #4f535c;
   width: 225px;
 }
 
-.btn-round-white {
+.btn-round-white a{
   border: 2px solid #fff;
-}
-
-.btn-send {
-  padding: 15px 36px;
-  border-radius: 27px;
 }
 
 .btn-send a {
@@ -91,21 +86,10 @@ header {
   position: relative;
   background-image: url(../img/top-bg.jpg);
   background-size: 100% 1000px;
-  // background-position: -100px;
   background-repeat: no-repeat;
   color: #fff;
-  
-
   padding-bottom: 155px;
-  // border: 3px solid green;
 }
-
-// .header {
-//   position: absolute;
-//   top: 50px;
-//   z-index: 1;
-// }
-
 .logo-hdr {
   display: inline-block;
 }
@@ -132,7 +116,6 @@ header {
   font-family: ProximaNovaThin, sans-serif;
 	font-size: 70px;
   line-height: 72px;
-
   margin-top: 170px;
   margin-bottom: 20px;
 }
@@ -151,7 +134,6 @@ header {
   background-color: #141a25;
   position: absolute;
   text-transform: uppercase;
-  
 }
 
 .promo-sale-title {
@@ -196,6 +178,10 @@ header {
   font-size: 80px;
 }
 
+.specific {
+  padding-bottom: 180px;
+}
+
 .specific-item {
   margin-bottom: 100px;
 }
@@ -211,7 +197,6 @@ header {
 }
 
 .specific-main-txt {
-  // font-family: ProximaNovaRegular, sans-serif;
   font-size: 20px;
   line-height: 30px;
   display: inline-block;
@@ -229,34 +214,28 @@ header {
 
 .advantage {
   position: relative;
-  
   background-image: url(../img/adv-bg-cropped.jpeg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  
   padding-top: 45px;
   padding-bottom: 370px;
 }
 
-.advantage:before {
+svg{
   position: absolute;
-  content: '';
-  display: inline-block;
-  
+  top: -200px;
   width: 100%;
   height: 200px;
-
-  // background-color: red;
+  display: block;
 }
 
 .advantage-item {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    
-    width: 33%;
-    margin-bottom: 115px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 33%;
+  margin-bottom: 115px;
 }
 
 .advantage-item-img-box img{
@@ -277,21 +256,16 @@ header {
 
 .buy {
   position: relative;
-  
   background-image: url(../img/buy-bg-full.jpg);
-  background-size: 150%;
+  background-size: cover;
   background-repeat: no-repeat;
-
   padding-top: 400px;
   padding-bottom: 100px;
-
-  border: 1px solid green;
 }
 
 .video {
   position: absolute;
   width: 1200px;
-
   top: -280px;
 }
 
@@ -466,23 +440,15 @@ header {
   border-left: none;
   border-right: none;
   padding-bottom: 15px;
-  padding-left: 20px;
+  padding-left: 30px;
   color: #fff;
   border-bottom: 2px solid #54585f;
   background-color: transparent;
-}
 
-.call-form-tel:before {
-  position: absolute;
-  content: '';
-  display: inline-block;
-
-  top: 10px;
-  left: -10px;
-  
   background-image: url(../img/phone.png);
-  background-size: 100%;
+  background-size: 5%;
   background-repeat: no-repeat;
+  
 }
 
 .call-form-right > .btn-callback {
@@ -537,7 +503,6 @@ header {
   font-size: 18px;
   line-height: 25px;
   outline: none;
-
   width: 360px;
   margin-bottom: 30px;
   border-top: none;
@@ -552,8 +517,7 @@ header {
 .ftr-right> .btn-send {
   width: 30%;
   float: right;
-
-  margin-top: -20px;
+  margin-top: -5px;
 }
 
 .owl-carousel {
@@ -598,4 +562,8 @@ header {
 
 .owl-dot:hover {
   outline: 2px solid black 
+}
+
+.owl-dot: {
+  color: red;
 }
