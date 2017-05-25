@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-round-white a{
   border: 2px solid #fff;
+  padding: 15px 65px;
 }
 
 .btn-send a {
@@ -85,10 +86,10 @@ header {
 .promo {
   position: relative;
   background-image: url(../img/top-bg.jpg);
-  background-size: 100% 1000px;
+  background-size: 100% 1100px;
   background-repeat: no-repeat;
   color: #fff;
-  padding-bottom: 155px;
+  padding-bottom: 305px;
 }
 .logo-hdr {
   display: inline-block;
@@ -129,8 +130,8 @@ header {
 
 .sale-label {
   position: absolute;
-  top: -40px;
-  padding: 6px;
+  top: -30px;
+  padding: 5px;
   background-color: #141a25;
   position: absolute;
   text-transform: uppercase;
@@ -146,11 +147,11 @@ header {
 .promo-sale-txt {
   font-family: ProximaNovaLight, sans-serif;
   font-size: 18px;
-  line-height: 30px; 
+  line-height: 26px; 
 }
 
 .promo-sale-left {
-  margin-top: 170px;
+  margin-top: 285px;
   position: relative;
   display: inline-block;
   vertical-align: baseline; 
@@ -159,7 +160,8 @@ header {
 .promo-sale-right {
   display: inline-block;
   vertical-align: baseline;
-  margin-left: 400px; 
+  margin-left: 400px;
+  padding-bottom: 20px;
 }
 
 .price {
@@ -178,8 +180,22 @@ header {
   font-size: 80px;
 }
 
+.new-price span {
+  margin-top: 20px;
+}
+// .new-price span {
+//   font-size: 40px;
+//   vertical-align: top;
+  
+// }
+
+.promo-sale-right > .btn-round-white {
+  margin-top: 20px;
+}
+
 .specific {
   padding-bottom: 180px;
+  margin-top: -130px;
 }
 
 .specific-item {
@@ -194,6 +210,7 @@ header {
 
 .specific-item-img-box:last-child {
   text-align: right;
+  margin-bottom: 0;
 }
 
 .specific-main-txt {
@@ -210,6 +227,10 @@ header {
   font-size: 15px;
   line-height: 25px;
   margin-top: 20px;
+}
+
+.slideWrap {
+  margin-top: -120px;
 }
 
 .advantage {
@@ -288,7 +309,7 @@ svg{
   line-height: 25px;
   color: #fff;
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 30px;
 }
 
 .products-inner {
@@ -304,7 +325,7 @@ svg{
   vertical-align: top;
   width: 360px;
   min-height: 800px;
-  margin-top: 105px;
+  margin-top: 85px;
   margin-right: 13%;
   padding-bottom: 50px;
 }
@@ -396,11 +417,16 @@ svg{
 
 .product-card > .btn-red-bg {
   margin: 0 auto;
+  margin-top: 30px;
+}
+.product-card > .btn-red-bg a {
+  padding: 15px 65px;
 }
 
 .call-form {
   color: #fff;
-  margin-top: 70px;
+  margin-top: 90px;
+  padding-bottom: 4px;
 }
 
 .call-form-left {
@@ -420,7 +446,6 @@ svg{
 .call-form-title {
   font-family: ProximaNovaLight, sans-serif;
   font-size: 50px;
-  margin-bottom: 10px;
 }
 
 .call-form-txt {
@@ -446,13 +471,14 @@ svg{
   background-color: transparent;
 
   background-image: url(../img/phone.png);
-  background-size: 5%;
+  background-size: 4%;
   background-repeat: no-repeat;
   
 }
 
 .call-form-right > .btn-callback {
   margin-left: 60px;
+  margin-top: 15px;
 }
 
 .vk-review {
@@ -491,10 +517,10 @@ svg{
 }
 
 .ftr-right-txt {
-  font-family: ProximaNovaRegular, sans-serif;
+  font-family: ProximaNovaLight, sans-serif;
   font-size: 20px;
   line-height: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .ftr-mail {
@@ -503,7 +529,7 @@ svg{
   font-size: 18px;
   line-height: 25px;
   outline: none;
-  width: 360px;
+  width: 340px;
   margin-bottom: 30px;
   border-top: none;
   border-left: none;
